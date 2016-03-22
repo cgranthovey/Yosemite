@@ -1,25 +1,711 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Yosemite" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waterfall" translatesAutoresizingMaskIntoConstraints="NO" id="kgd-5x-uSa">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Majestic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3l-5N-9vt">
+                                <rect key="frame" x="20" y="28" width="64" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqc-QN-ekZ">
+                                <rect key="frame" x="20" y="56" width="83" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="R5F-iy-qo1"/>
+                                    <constraint firstAttribute="height" constant="22" id="x3q-Nf-eom"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photogenic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsg-0k-bAj">
+                                <rect key="frame" x="20" y="86" width="99" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="GDl-NQ-TOT"/>
+                                    <constraint firstAttribute="width" constant="99" id="dfv-zP-k3c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yosemite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCN-zH-udH">
+                                <rect key="frame" x="9" y="178" width="200" height="51"/>
+                                <color key="backgroundColor" red="0.34901960784313724" green="0.5" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="ctN-cE-QBj">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="200" id="mbp-P9-gUz">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="277"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="45"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="et8-5q-0dc">
+                                <rect key="frame" x="248" y="1091" width="105" height="79"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAd-aG-c4D" customClass="menuButton" customModule="Yosemite" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Pbr-Wr-WSA">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="133"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Learn More"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Pbr-Wr-WSA"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                            <mask key="constraints">
+                                                <include reference="Pbr-Wr-WSA"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="toDetailButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6e-p2-sQ7"/>
+                                            <segue destination="KgK-Go-ayz" kind="show" identifier="toDetails" id="ZRi-lO-tcc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISY-Ss-0Sz" customClass="menuButton" customModule="Yosemite" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="47" width="105" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="67" id="pZB-dw-q31">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Photos"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="pZB-dw-q31"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                            <mask key="constraints">
+                                                <include reference="pZB-dw-q31"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="toPhotosButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XQ4-1S-Apu"/>
+                                            <segue destination="nIn-56-zYm" kind="show" identifier="toPhotos" id="Mzw-aq-cKf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="0cI-fc-HY6"/>
+                                    <constraint firstAttribute="width" constant="105" id="RwJ-le-xMV">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0cI-fc-HY6"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" axis="horizontal">
+                                    <mask key="constraints">
+                                        <exclude reference="RwJ-le-xMV"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="National Park" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3L-fS-YfO">
+                                <rect key="frame" x="9" y="239" width="235" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="SVQ-Uu-GOq">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="56"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="235" id="cef-0c-wpF">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="314"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="37"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a3l-5N-9vt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="0bu-wg-2Vk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j3L-fS-YfO" secondAttribute="trailing" constant="-20" id="14h-9T-PW8"/>
+                            <constraint firstItem="Nqc-QN-ekZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6Ts-VB-atJ"/>
+                            <constraint firstItem="kgd-5x-uSa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6ws-9n-fws"/>
+                            <constraint firstItem="fCN-zH-udH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-11" id="DdM-mZ-p0D">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="a3l-5N-9vt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="E6H-HF-2lg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fCN-zH-udH" secondAttribute="trailing" constant="-20" id="IJG-V7-reV"/>
+                            <constraint firstItem="j3L-fS-YfO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Iyt-kg-8n0"/>
+                            <constraint firstItem="kgd-5x-uSa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="L7T-LX-aVC"/>
+                            <constraint firstItem="et8-5q-0dc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M4v-E2-b6Q"/>
+                            <constraint firstItem="Nqc-QN-ekZ" firstAttribute="top" secondItem="a3l-5N-9vt" secondAttribute="bottom" constant="8" id="Mbv-24-3wk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kgd-5x-uSa" secondAttribute="bottom" id="OlH-Ip-3L7"/>
+                            <constraint firstItem="Nsg-0k-bAj" firstAttribute="top" secondItem="Nqc-QN-ekZ" secondAttribute="bottom" constant="8" id="Wcn-dC-U4u"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="et8-5q-0dc" secondAttribute="bottom" constant="30" id="Xi5-Ip-f4l"/>
+                            <constraint firstItem="fCN-zH-udH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ZuO-oa-13J"/>
+                            <constraint firstItem="Nsg-0k-bAj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aTR-5a-aDj"/>
+                            <constraint firstItem="fCN-zH-udH" firstAttribute="top" secondItem="Nsg-0k-bAj" secondAttribute="bottom" constant="70" id="iUe-jM-Ok0">
+                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                            </constraint>
+                            <constraint firstItem="a3l-5N-9vt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mn0-kB-jTG"/>
+                            <constraint firstItem="j3L-fS-YfO" firstAttribute="top" secondItem="fCN-zH-udH" secondAttribute="bottom" constant="10" id="q86-AO-x7K">
+                                <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="kgd-5x-uSa" secondAttribute="trailing" id="qPb-uP-Wgl"/>
+                            <constraint firstItem="j3L-fS-YfO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-11" id="uur-qq-XsE">
+                                <variation key="heightClass=regular-widthClass=regular" constant="89"/>
+                            </constraint>
+                            <constraint firstItem="a3l-5N-9vt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xu4-NX-EmA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IJG-V7-reV"/>
+                                <exclude reference="ZuO-oa-13J"/>
+                                <exclude reference="14h-9T-PW8"/>
+                                <exclude reference="Iyt-kg-8n0"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="nationalParkLbl" destination="j3L-fS-YfO" id="w5G-RV-X2W"/>
+                        <outlet property="yosemiteLbl" destination="fCN-zH-udH" id="T4z-Xk-NTs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-101.25" y="-8.25"/>
+        </scene>
+        <!--More InfoVC-->
+        <scene sceneID="fIk-cP-Jb1">
+            <objects>
+                <viewController id="KgK-Go-ayz" customClass="moreInfoVC" customModule="Yosemite" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UUc-Aw-MX9"/>
+                        <viewControllerLayoutGuide type="bottom" id="wp6-s8-shl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nug-eo-dd7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JB9-p8-3sZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H2L-pf-DuB">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountain" translatesAutoresizingMaskIntoConstraints="NO" id="VV4-Dq-fLI">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="126"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="126" id="RoQ-Qh-gev"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erv-UM-cYu" customClass="menuButton" customModule="Yosemite" customModuleProvider="target">
+                                                <rect key="frame" x="5" y="15" width="50" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="aj0-8Q-QcU"/>
+                                                    <constraint firstAttribute="width" constant="50" id="cQS-4d-EDn"/>
+                                                </constraints>
+                                                <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <action selector="backToBegining:" destination="KgK-Go-ayz" eventType="touchUpInside" id="sEG-lA-AmU"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="b1t-fN-eiQ">
+                                                <rect key="frame" x="10" y="136" width="580" height="1044"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="7bt-Xk-Xqj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="580" height="43"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Founded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrX-QD-2Ey">
+                                                                <rect key="frame" x="0.0" y="0.0" width="580" height="21"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="475" height="21"/>
+                                                                </variation>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1916" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7C-uD-SZg" customClass="bodyInfoLbl" customModule="Yosemite" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="24" width="580" height="19"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="24" width="475" height="19"/>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="475" height="43"/>
+                                                        </variation>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="zWw-b0-wux">
+                                                        <rect key="frame" x="0.0" y="138" width="580" height="43"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Square Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wd-tD-pfM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="580" height="21"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="475" height="21"/>
+                                                                </variation>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1189 Square Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apT-Kc-qfO" customClass="bodyInfoLbl" customModule="Yosemite" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="24" width="580" height="19"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="24" width="475" height="19"/>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="48" width="475" height="43"/>
+                                                        </variation>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="XOV-MK-1G7">
+                                                        <rect key="frame" x="0.0" y="277" width="580" height="192"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Climate - Wiki" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIP-qn-NIw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="580" height="21"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="475" height="21"/>
+                                                                </variation>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyJ-Tq-gPS" customClass="bodyInfoLbl" customModule="Yosemite" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="24" width="580" height="168"/>
+                                                                <mutableString key="text">Yosemite has a Mediterranean climate (Köppen climate classification Csa), meaning most precipitation falls during the mild winter, and the other seasons are nearly dry (less than 3% of precipitation falls during the long, hot summers). Because of orographic lift, precipitation increases with elevation up to 8,000 feet (2,400 m) where it slowly decreases to the crest. Precipitation amounts vary from 36 inches (910 mm) at 4,000 feet (1,200 m) elevation to 50 inches (1,300 mm) at 8,600 feet (2,600 m). Snow does not typically persist on the ground until November in the high country. It accumulates all winter and into March or early April.</mutableString>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="24" width="475" height="187"/>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="96" width="475" height="211"/>
+                                                        </variation>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="4hV-Zy-dVO">
+                                                        <rect key="frame" x="0.0" y="564" width="580" height="211"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Water - Wiki" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qB-yp-AvE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="580" height="21"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="475" height="21"/>
+                                                                </variation>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urq-Cg-I9r" customClass="bodyInfoLbl" customModule="Yosemite" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="24" width="580" height="187"/>
+                                                                <mutableString key="text">Hydrologic processes, including glaciation, flooding, and fluvial geomorphic response, have been fundamental in creating landforms in the park.[53] The park also contains approximately 3,200 lakes (greater than 100 m2), two reservoirs, and 1,700 miles (2,700 km) of streams, all of which help form these two large watersheds.[54] Wetlands in Yosemite occur in valley bottoms throughout the park, and are often hydrologically linked to nearby lakes and rivers through seasonal flooding and groundwater movement. Meadow habitats, distributed at elevations from 3,000 to 11,000 feet (910 to 3,350 m) in the park, are generally wetlands, as are the riparian habitats found on the banks of Yosemite's numerous streams and rivers.</mutableString>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="24" width="475" height="224"/>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="312" width="475" height="248"/>
+                                                        </variation>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="lNh-OF-mhq">
+                                                        <rect key="frame" x="0.0" y="870" width="580" height="174"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Habitat - Wiki" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzS-0H-QOK">
+                                                                <rect key="frame" x="0.0" y="0.0" width="580" height="21"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="475" height="21"/>
+                                                                </variation>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcb-os-oqE" customClass="bodyInfoLbl" customModule="Yosemite" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="24" width="580" height="150"/>
+                                                                <mutableString key="text">With its scrubby sun-baked chaparral, stately groves of pine, fir, and sequoia, and expanses of alpine woodlands and meadows, Yosemite National Park preserves a Sierra Nevada landscape as it prevailed before Euro-American settlement.[65] In contrast to surrounding lands, which have been significantly altered by logging, the park still contains some 225,510 acres (91,260 ha) of old-growth forest.[66] Taken together, the park's varied habitats support over 250 species of vertebrates, which include fish, amphibians, reptiles, birds, and mammals.</mutableString>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="24" width="475" height="55"/>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="565" width="475" height="79"/>
+                                                        </variation>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="850" id="GEl-4b-k6K"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="GEl-4b-k6K"/>
+                                                    </mask>
+                                                </variation>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="b1t-fN-eiQ" secondAttribute="bottom" constant="20" id="0PT-W4-ANn"/>
+                                            <constraint firstItem="b1t-fN-eiQ" firstAttribute="leading" secondItem="H2L-pf-DuB" secondAttribute="leading" constant="10" id="GLa-05-rVj">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                                            </constraint>
+                                            <constraint firstItem="VV4-Dq-fLI" firstAttribute="top" secondItem="H2L-pf-DuB" secondAttribute="top" id="GcV-2G-hr1"/>
+                                            <constraint firstItem="erv-UM-cYu" firstAttribute="leading" secondItem="H2L-pf-DuB" secondAttribute="leading" constant="5" id="Iw4-gU-1Sg"/>
+                                            <constraint firstAttribute="height" constant="1200" id="MMa-uB-INZ">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="800"/>
+                                            </constraint>
+                                            <constraint firstAttribute="trailing" secondItem="b1t-fN-eiQ" secondAttribute="trailing" constant="10" id="ZEB-k2-TTF">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                            </constraint>
+                                            <constraint firstItem="erv-UM-cYu" firstAttribute="top" secondItem="H2L-pf-DuB" secondAttribute="top" constant="15" id="bEC-90-XHS"/>
+                                            <constraint firstItem="b1t-fN-eiQ" firstAttribute="top" secondItem="VV4-Dq-fLI" secondAttribute="bottom" constant="10" id="cj1-rX-rVK"/>
+                                            <constraint firstAttribute="bottom" secondItem="b1t-fN-eiQ" secondAttribute="bottom" constant="20" id="ipQ-nc-fo1"/>
+                                            <constraint firstItem="VV4-Dq-fLI" firstAttribute="leading" secondItem="H2L-pf-DuB" secondAttribute="leading" id="tXf-Pk-WOX"/>
+                                            <constraint firstAttribute="trailing" secondItem="VV4-Dq-fLI" secondAttribute="trailing" id="uOj-FX-gcH"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ipQ-nc-fo1"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="H2L-pf-DuB" firstAttribute="leading" secondItem="JB9-p8-3sZ" secondAttribute="leading" id="ORE-3H-udM"/>
+                                    <constraint firstAttribute="bottom" secondItem="H2L-pf-DuB" secondAttribute="bottom" constant="400" id="XKv-ZP-kFm"/>
+                                    <constraint firstAttribute="trailing" secondItem="H2L-pf-DuB" secondAttribute="trailing" id="hNQ-zx-X7R"/>
+                                    <constraint firstItem="H2L-pf-DuB" firstAttribute="top" secondItem="JB9-p8-3sZ" secondAttribute="top" id="nd4-Y3-x9e"/>
+                                    <constraint firstAttribute="bottom" secondItem="H2L-pf-DuB" secondAttribute="bottom" id="rXe-yn-r2z"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XKv-ZP-kFm"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JB9-p8-3sZ" secondAttribute="trailing" id="LUq-EP-dJT"/>
+                            <constraint firstItem="JB9-p8-3sZ" firstAttribute="leading" secondItem="Nug-eo-dd7" secondAttribute="leading" id="WGT-SE-2Qs"/>
+                            <constraint firstItem="JB9-p8-3sZ" firstAttribute="top" secondItem="Nug-eo-dd7" secondAttribute="top" id="Zlr-Rz-7Yw"/>
+                            <constraint firstItem="H2L-pf-DuB" firstAttribute="width" secondItem="Nug-eo-dd7" secondAttribute="width" id="cOy-No-nbW"/>
+                            <constraint firstItem="wp6-s8-shl" firstAttribute="top" secondItem="JB9-p8-3sZ" secondAttribute="bottom" id="soT-hR-A0a"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1200"/>
+                    <connections>
+                        <outlet property="climate" destination="IyJ-Tq-gPS" id="ghq-Y2-oXv"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="back" id="qPv-Lm-MM2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xf2-NU-uuf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="-128"/>
+        </scene>
+        <!--Images View Controller-->
+        <scene sceneID="x8L-vH-jme">
+            <objects>
+                <viewController id="nIn-56-zYm" customClass="imagesViewController" customModule="Yosemite" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FnE-fL-BUW"/>
+                        <viewControllerLayoutGuide type="bottom" id="KRQ-Oe-5O0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="khw-RA-1j3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6kC-eP-PhD">
+                                <rect key="frame" x="20" y="30" width="560" height="560"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2bJ-IV-cus">
+                                        <rect key="frame" x="0.0" y="0.0" width="278" height="560"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="PWp-rI-hgO">
+                                                <rect key="frame" x="0.0" y="0.0" width="278" height="183"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="PEU-hR-djp"/>
+                                                    <constraint firstAttribute="height" constant="128" id="ooV-Lc-7qe"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="PEU-hR-djp"/>
+                                                        <exclude reference="ooV-Lc-7qe"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="h8X-o2-T2S" appends="YES" id="Cgk-QR-TZS"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="rQD-WZ-FCf">
+                                                <rect key="frame" x="0.0" y="188" width="278" height="184"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="GXm-gT-ubd"/>
+                                                    <constraint firstAttribute="height" constant="128" id="iC5-gM-Xew"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="GXm-gT-ubd"/>
+                                                        <exclude reference="iC5-gM-Xew"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="faU-ad-yvF" appends="YES" id="9Kg-bp-F5s"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="L5H-CL-JKz">
+                                                <rect key="frame" x="0.0" y="377" width="278" height="183"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="RQ7-wm-z2m"/>
+                                                    <constraint firstAttribute="width" constant="240" id="h7f-mA-Vve"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="h7f-mA-Vve"/>
+                                                        <exclude reference="RQ7-wm-z2m"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="YoB-X4-fdk" appends="YES" id="eNm-wj-z1S"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9oT-X7-xD6">
+                                        <rect key="frame" x="283" y="0.0" width="277" height="560"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" highlightedImage="forest" translatesAutoresizingMaskIntoConstraints="NO" id="aQP-mE-78y">
+                                                <rect key="frame" x="0.0" y="0.0" width="277" height="278"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="JMm-ko-QYX"/>
+                                                    <constraint firstAttribute="height" constant="128" id="VFx-9s-rtU"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="JMm-ko-QYX"/>
+                                                        <exclude reference="VFx-9s-rtU"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="360"/>
+                                                </variation>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="3cO-Mn-ETc" appends="YES" id="X6a-9b-xhY"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="lja-xW-XjF">
+                                                <rect key="frame" x="0.0" y="283" width="277" height="277"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="fu9-dx-z1A"/>
+                                                    <constraint firstAttribute="height" constant="128" id="pwn-3M-yuQ"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="fu9-dx-z1A"/>
+                                                        <exclude reference="pwn-3M-yuQ"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="141" y="0.0" width="136" height="360"/>
+                                                </variation>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="yWx-3d-lK4" appends="YES" id="mNT-n0-IvS"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="horizontal"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWM-LS-fSk" customClass="menuButton" customModule="Yosemite" customModuleProvider="target">
+                                <rect key="frame" x="25" y="35" width="50" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="xmE-xN-efS"/>
+                                    <constraint firstAttribute="height" constant="35" id="zLE-gi-9Gf"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="nIn-56-zYm" eventType="touchUpInside" id="mGz-K7-lEI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GWM-LS-fSk" firstAttribute="leading" secondItem="khw-RA-1j3" secondAttribute="leadingMargin" constant="5" id="8OQ-PP-0XJ"/>
+                            <constraint firstItem="6kC-eP-PhD" firstAttribute="top" secondItem="FnE-fL-BUW" secondAttribute="bottom" constant="10" id="9OC-Wc-xT6"/>
+                            <constraint firstItem="6kC-eP-PhD" firstAttribute="leading" secondItem="khw-RA-1j3" secondAttribute="leadingMargin" id="FtF-ap-Mke"/>
+                            <constraint firstItem="GWM-LS-fSk" firstAttribute="top" secondItem="FnE-fL-BUW" secondAttribute="bottom" constant="15" id="Gg5-Wc-GPm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6kC-eP-PhD" secondAttribute="trailing" id="WW1-cN-aRs"/>
+                            <constraint firstItem="KRQ-Oe-5O0" firstAttribute="top" secondItem="6kC-eP-PhD" secondAttribute="bottom" constant="10" id="imV-gX-HM1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="dy6-Q2-mPh" kind="show" identifier="full" id="K1b-X4-qu6"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="backFromPics" id="KNf-sT-nml"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGY-7M-pVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="h8X-o2-T2S">
+                    <connections>
+                        <action selector="swampFullScreen:" destination="nIn-56-zYm" id="Jcb-E1-YXg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="faU-ad-yvF">
+                    <connections>
+                        <action selector="waterfallLandscape:" destination="nIn-56-zYm" id="Vxh-HX-0ER"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="YoB-X4-fdk">
+                    <connections>
+                        <action selector="halfDome:" destination="nIn-56-zYm" id="PLa-Pf-q9e"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="3cO-Mn-ETc">
+                    <connections>
+                        <action selector="forest:" destination="nIn-56-zYm" id="wkG-iu-qfj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="yWx-3d-lK4">
+                    <connections>
+                        <action selector="tiltingTree:" destination="nIn-56-zYm" id="VTS-LK-irW"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="408" y="1359"/>
+        </scene>
+        <!--Full Screen Img View Controller-->
+        <scene sceneID="S7a-y3-gU5">
+            <objects>
+                <viewController id="dy6-Q2-mPh" customClass="fullScreenImgViewController" customModule="Yosemite" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aIb-io-mq5"/>
+                        <viewControllerLayoutGuide type="bottom" id="B5a-bY-P1Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wKQ-AG-zzj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwG-iD-Xh4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a1T-xK-wc2">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="1ZT-h3-C3t" appends="YES" id="SBk-Rh-TJK"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="a1T-xK-wc2" firstAttribute="top" secondItem="wwG-iD-Xh4" secondAttribute="top" id="DhO-mp-iWp"/>
+                                    <constraint firstAttribute="bottom" secondItem="a1T-xK-wc2" secondAttribute="bottom" id="fNQ-bA-Cm8"/>
+                                    <constraint firstItem="a1T-xK-wc2" firstAttribute="leading" secondItem="wwG-iD-Xh4" secondAttribute="leading" id="keg-Wp-fok"/>
+                                    <constraint firstAttribute="trailing" secondItem="a1T-xK-wc2" secondAttribute="trailing" id="rD7-eU-12T"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wwG-iD-Xh4" firstAttribute="top" secondItem="wKQ-AG-zzj" secondAttribute="top" id="Isr-0f-Dbe"/>
+                            <constraint firstAttribute="trailing" secondItem="wwG-iD-Xh4" secondAttribute="trailing" id="VIh-6h-utb"/>
+                            <constraint firstItem="B5a-bY-P1Z" firstAttribute="top" secondItem="wwG-iD-Xh4" secondAttribute="bottom" id="XMd-PQ-GQm"/>
+                            <constraint firstItem="wwG-iD-Xh4" firstAttribute="leading" secondItem="wKQ-AG-zzj" secondAttribute="leading" id="gCt-6d-Q8q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fullScreenImg" destination="a1T-xK-wc2" id="eRS-vJ-Ww2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nN9-h4-2Hs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1ZT-h3-C3t">
+                    <connections>
+                        <segue destination="nIn-56-zYm" kind="show" id="eBC-tz-WRR"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1183" y="1359"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="960" height="640"/>
+        <image name="2" width="2048" height="1366"/>
+        <image name="3" width="960" height="640"/>
+        <image name="4" width="640" height="960"/>
+        <image name="5" width="770" height="960"/>
+        <image name="forest" width="640" height="960"/>
+        <image name="mountain" width="640" height="960"/>
+        <image name="waterfall" width="640" height="960"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="eBC-tz-WRR"/>
+        <segue reference="qPv-Lm-MM2"/>
+    </inferredMetricsTieBreakers>
 </document>

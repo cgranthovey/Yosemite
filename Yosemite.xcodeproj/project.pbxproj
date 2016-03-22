@@ -12,6 +12,11 @@
 		A17D83A81C9FA25F00A2EC98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17D83A61C9FA25F00A2EC98 /* Main.storyboard */; };
 		A17D83AA1C9FA25F00A2EC98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17D83A91C9FA25F00A2EC98 /* Assets.xcassets */; };
 		A17D83AD1C9FA25F00A2EC98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17D83AB1C9FA25F00A2EC98 /* LaunchScreen.storyboard */; };
+		A17D83B51C9FA53B00A2EC98 /* menuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D83B41C9FA53B00A2EC98 /* menuButton.swift */; };
+		A17D83B71CA077B900A2EC98 /* bodyInfoLbl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D83B61CA077B900A2EC98 /* bodyInfoLbl.swift */; };
+		A17D83B91CA087BD00A2EC98 /* moreInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D83B81CA087BD00A2EC98 /* moreInfoVC.swift */; };
+		A17D83BB1CA08A9F00A2EC98 /* imagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D83BA1CA08A9F00A2EC98 /* imagesViewController.swift */; };
+		A17D83BD1CA092DA00A2EC98 /* fullScreenImgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D83BC1CA092DA00A2EC98 /* fullScreenImgViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		A17D83A91C9FA25F00A2EC98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A17D83AC1C9FA25F00A2EC98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A17D83AE1C9FA25F00A2EC98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17D83B41C9FA53B00A2EC98 /* menuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuButton.swift; sourceTree = "<group>"; };
+		A17D83B61CA077B900A2EC98 /* bodyInfoLbl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bodyInfoLbl.swift; sourceTree = "<group>"; };
+		A17D83B81CA087BD00A2EC98 /* moreInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = moreInfoVC.swift; sourceTree = "<group>"; };
+		A17D83BA1CA08A9F00A2EC98 /* imagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imagesViewController.swift; sourceTree = "<group>"; };
+		A17D83BC1CA092DA00A2EC98 /* fullScreenImgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fullScreenImgViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				A17D83A21C9FA25F00A2EC98 /* AppDelegate.swift */,
+				A17D83B41C9FA53B00A2EC98 /* menuButton.swift */,
+				A17D83B61CA077B900A2EC98 /* bodyInfoLbl.swift */,
 				A17D83A41C9FA25F00A2EC98 /* ViewController.swift */,
 				A17D83A61C9FA25F00A2EC98 /* Main.storyboard */,
+				A17D83B81CA087BD00A2EC98 /* moreInfoVC.swift */,
+				A17D83BA1CA08A9F00A2EC98 /* imagesViewController.swift */,
+				A17D83BC1CA092DA00A2EC98 /* fullScreenImgViewController.swift */,
 				A17D83A91C9FA25F00A2EC98 /* Assets.xcassets */,
 				A17D83AB1C9FA25F00A2EC98 /* LaunchScreen.storyboard */,
 				A17D83AE1C9FA25F00A2EC98 /* Info.plist */,
@@ -136,7 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17D83B71CA077B900A2EC98 /* bodyInfoLbl.swift in Sources */,
+				A17D83B91CA087BD00A2EC98 /* moreInfoVC.swift in Sources */,
+				A17D83B51C9FA53B00A2EC98 /* menuButton.swift in Sources */,
 				A17D83A51C9FA25F00A2EC98 /* ViewController.swift in Sources */,
+				A17D83BD1CA092DA00A2EC98 /* fullScreenImgViewController.swift in Sources */,
+				A17D83BB1CA08A9F00A2EC98 /* imagesViewController.swift in Sources */,
 				A17D83A31C9FA25F00A2EC98 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
